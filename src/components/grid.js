@@ -4,9 +4,6 @@ import * as THREE from 'three';
 
 class Grid extends Component {
     componentDidMount(){
-    
-      const spherical = new THREE.Spherical()
-      const rotationMatrix = new THREE.Matrix4()
      
       const geometry = new THREE.ConeBufferGeometry( 0.1, 0.5, 8 )
       const material = new THREE.MeshNormalMaterial()

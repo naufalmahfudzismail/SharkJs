@@ -3,6 +3,7 @@ import './App.css';
 import { SplitButton, MenuItem } from 'react-bootstrap';
 import * as THREE from 'three';
 import Grid from './components/grid';
+import MoveAble from './components/MoveAble';
 
 class App extends Component {
   render() {
@@ -16,6 +17,9 @@ class App extends Component {
         </div>
         <div >
           <Grid/>
+        </div>
+        <div >
+          <MoveAble/>
         </div>
       </div>
     );
@@ -88,7 +92,7 @@ class Threejs extends Component {
           //this.camera.aspect = aspectRatio;
           //ADD RENDERER
           this.renderer = new THREE.WebGLRenderer( { antialias : true} )
-          this.renderer.setClearColor('#000000')
+          this.renderer.setClearColor('#99ff99')
           this.renderer.setSize(width, height)
           this.camera.updateProjectionMatrix();
           this.mount.appendChild(this.renderer.domElement)
