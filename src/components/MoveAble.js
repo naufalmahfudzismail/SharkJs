@@ -4,8 +4,7 @@ import Detector from "../controls/Detector";
 import DragControls from "three-dragcontrols";
 import OrbitControls from "three-orbit-controls";
 
-var camera, scene, renderer, dragControls, controls;
-
+const  camera, scene, renderer, dragControls, controls;
 class MoveAble extends Component {
   componentDidMount() {
     if (!Detector.webgl) Detector.addGetWebGLMessage();
